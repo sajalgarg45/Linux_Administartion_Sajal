@@ -1,9 +1,32 @@
-## Lab Experiment 01
+# File Creation and Organization Using Linux Commands  
 
-- Touch Command: Use the touch command to create sets of empty practice files to use during this lab.
+## 1. Creating Multiple Empty Files  
+Use the `touch` command to generate a set of empty files for practice.  
 
-- Brace Expansion: In each set, replace X with the numbers 1 through 6.
+## 2. Using Brace Expansion for Efficiency  
+Leverage brace expansion to replace `X` with numbers ranging from **1 to 6** when creating multiple files simultaneously.  
 
-- File & Directory Management: Create six files with names of the form songX.mp3, snapX.jpg, filmX.avi. Create three subdirectories for organizing your files, and name the subdirectories friends, family, and work. Use a single command to create all three subdirectories at the same time.
+## 3. File and Directory Management  
+- Create six files with the following naming patterns:  
+  - `songX.mp3`  
+  - `snapX.jpg`  
+  - `filmX.avi`  
+- Organize these files into three directories:  
+  - `friends`  
+  - `family`  
+  - `work`  
+- Use a **single command** to create all three directories at once.  
 
-- touch song{1..6}.mp3 snap{1..6}.jpg film{1..6}.avi mkdir friends family work
+## 4. Command Execution  
+To achieve the above tasks efficiently, run the following commands in the terminal:  
+
+```bash
+# Creating multiple files using brace expansion
+touch song{1..6}.mp3 snap{1..6}.jpg film{1..6}.avi
+
+# Creating multiple directories in a single command
+mkdir friends family work
+```
+
+![alt text](image1.png)
+![alt text](image2.png)
